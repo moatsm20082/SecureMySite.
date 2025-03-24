@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Tools</title>
+    <style>
+        body {
+            background-color: #222;
+            color: #f1f1f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+            color: #00bcd4;
+        }
+
+        .tool-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .tool {
+            background: #333;
+            padding: 20px;
+            margin: 15px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .tool:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+
+        .tool h2 {
+            color: #00bcd4;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ff9800;
+        }
+
+        /* القائمة العلوية */
+        .nav-bar {
+            background-color: #111;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar ul li {
+            padding: 0 15px;
+        }
+
+        .nav-bar ul li a {
+            color: #fff;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        .nav-bar ul li a:hover {
+            background-color: #444;
+            color: #00bcd4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Top Ethical Hacking Tools</h1>
+
+    <!-- القائمة العلوية -->
+    <div class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Vulnerabilities.html">Vulnerabilities</a></li>
+            <li><a href="signup.html">Login/Sign Up</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="boot.html">chat bot</a></li>
+        </ul>
+    </div>
+
+    <div class="tool-container">
+        <div class="tool">
+            <h2>Metasploit</h2>
+            <p>A powerful framework for penetration testing.</p>
+            <a href="https://www.metasploit.com/" target="_blank">Download</a>
+        </div>
+        <div class="tool">
+            <h2>Wireshark</h2>
+            <p>A network protocol analyzer for deep packet inspection.</p>
+            <a href="https://www.wireshark.org/" target="_blank">Download</a>
+        </div>
+        <div class="tool">
+            <h2>Burp Suite</h2>
+            <p>A web vulnerability scanner and testing tool.</p>
+            <a href="https://portswigger.net/burp" target="_blank">Download</a>
+        </div>
+        <div class="tool">
+            <h2>Nmap</h2>
+            <p>A network scanning tool for discovering hosts and services.</p>
+            <a href="https://nmap.org/" target="_blank">Download</a>
+        </div>
+    </div>
+</body>
+</html>

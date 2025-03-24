@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SecureMySite provides web security, penetration testing, and network security services.">
+    <meta name="keywords" content="web security, penetration testing, network security">
+    <title>SecureMySite</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: #00bcd4;
+            margin-left: 20px;
+        }
+
+        .auth-menu {
+            position: absolute;
+            top: 20px;
+            right: 60px; /* Changed to move profile image to the right */
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-menu img {
+            width: 60px;
+            height: 60px;
+            border-radius: 60%;
+            cursor: pointer;
+            border: 2px solid #00bcd4;
+        }
+
+        /* Sections Navbar Styling */
+        .sections-nav {
+            background-color: transparent;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+            z-index: 9;
+            display: flex;
+            justify-content: center; /* Center the navigation */
+            align-items: center;     /* Ensure vertical centering */
+        }
+
+        .sections-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center the nav items */
+            gap: 20px; /* Add gap between menu items */
+        }
+
+        .sections-nav ul li {
+            margin: 0;
+        }
+
+        .sections-nav ul li a {
+            color: #00bcd4;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .sections-nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        /* Main Content Section */
+        .content {
+            margin-top: 120px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .services-section {
+            padding: 40px;
+            background-color: #2a2a2a;
+            margin-top: 50px;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-item {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 22%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .service-item h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #00bcd4;
+        }
+
+        .service-item p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .service-item a {
+            text-decoration: none;
+            color: #00bcd4;
+            font-weight: bold;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #1f1f1f;
+            padding: 15px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            color: #aaa;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-item {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+
+        form, .signup-container {
+            margin-left: 50px; /* تغيير القيمة لجعلها تتحرك أكثر إلى اليسار */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SecureMySite</div>
+            <div class="auth-menu">
+                <a href="">
+                    <img id="user-icon" src="" alt="User Icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sections Navbar -->
+    <nav class="sections-nav">
+        <ul>
+            <li><a href="Hacking tools.html">Hacking tools</a></li>
+            <li><a href="Vulnerabilities.html">Vulnerabilities</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="signup.html">Login/Sign Up</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="boot.html">chat bot</a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+    <div class="content">
+        <h1>Welcome to SecureMySite</h1>
+        <section class="services-section">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service-item">
+                    <img src="internet-online-network-security-system-laptop-computer-with-lock-icon-screen-application-programming-interface-icon_123766-9-1.webp" alt="Service 1">
+                    <h2>Web Security</h2>
+                    <p>Enhancing the security of your website from attacks.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service-item">
+                    <img src="it_security_training__solutions_i_ts_2_cover.jpg" alt="Service 2">
+                    <h2>Network Security</h2>
+                    <p>Protecting your network from unauthorized access.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service-item">
+                    <img src="pen_testing.png" alt="Service 3">
+                    <h2>Penetration Testing</h2>
+                    <p>Finding vulnerabilities in your system.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br><br>
+    <footer>
+        <p>&copy; 2025 SecureMySite. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const loginForm = document.getElementById("loginForm");
+            const signupForm = document.getElementById("signupForm");
+            const userIcon = document.getElementById("user-icon");
+
+            // ✅ تحميل بيانات المستخدم
+            let storedUser = JSON.parse(localStorage.getItem("userData")) || {};
+
+            // ✅ تحديث صورة المستخدم إذا كان مسجل دخول
+            if (userIcon) {
+                let savedImage = sessionStorage.getItem("profileImage") || storedUser.profileImage;
+                if (savedImage) {
+                    userIcon.src = savedImage;
+                }
+            }
+
+            // ✅ تسجيل حساب جديد مع صورة
+            if (signupForm) {
+                signupForm.addEventListener("submit", async (e) => {
+                    e.preventDefault();
+
+                    const username = document.getElementById("username").value.trim();
+                    const email = document.getElementById("signup-email").value.trim();
+                    const password = document.getElementById("signup-password").value.trim();
+                    const profilePicInput = document.getElementById("profile-pic");
+
+                    let userData = { username, email, password };
+
+                    if (profilePicInput.files.length > 0) {
+                        const file = profilePicInput.files[0];
+                        const reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            userData.profileImage = e.target.result;
+                            localStorage.setItem("userData", JSON.stringify(userData));
+                            redirectToLogin();
+                        };
+                        reader.readAsDataURL(file);
+                    } else {
+                        localStorage.setItem("userData", JSON.stringify(userData));
+                        redirectToLogin();
+                    }
+                });
+            }
+
+            // ✅ تسجيل الدخول وتحديث الصورة فورًا
+            if (loginForm) {
+                loginForm.addEventListener("submit", async (e) => {
+                    e.preventDefault();
+
+                    const email = document.getElementById("login-email").value.trim();
+                    const password = document.getElementById("login-password").value.trim();
+
+                    if (email === storedUser.email && password === storedUser.password) {
+                        sessionStorage.setItem("isLoggedIn", "true");
+                        sessionStorage.setItem("profileImage", storedUser.profileImage || "");
+
+                        // ✅ تحديث صورة المستخدم مباشرة بعد تسجيل الدخول
+                        if (userIcon && storedUser.profileImage) {
+                            userIcon.src = storedUser.profileImage;
+                        }
+
+                        showSuccess("✅ تسجيل دخول ناجح!");
+                        setTimeout(() => window.location.replace("index.html"), 300);
+                    } else {
+                        showError("❌ البريد الإلكتروني أو كلمة المرور غير صحيحة!");
+                    }
+                });
+            }
+
+            function redirectToLogin() {
+                showSuccess("🎉 تم إنشاء الحساب بنجاح! جاري نقلك...");
+                setTimeout(() => window.location.replace("login.html"), 300);
+            }
+
+            function showSuccess(msg) {
+                let successDiv = document.createElement("div");
+                successDiv.textContent = msg;
+                successDiv.style.cssText = "color: green; font-weight: bold; text-align: center;";
+                document.body.appendChild(successDiv);
+            }
+
+            function showError(msg) {
+                let errorDiv = document.getElementById("error-msg");
+                if (!errorDiv) {
+                    errorDiv = document.createElement("div");
+                    errorDiv.id = "error-msg";
+                    document.body.appendChild(errorDiv);
+                }
+                errorDiv.textContent = msg;
+                errorDiv.style.cssText = "color: red; font-weight: bold; text-align: center;";
+            }
+        });
+
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
+</body>
+</html>
